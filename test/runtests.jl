@@ -2,5 +2,6 @@ using HelloWorld
 using Test
 
 @testset "HelloWorld.jl" begin
-    # Write your tests here.
+    @test HelloWorld.greet() == "Hello world!"
+    @test HelloWorld.greet() != "Hello!"
 end
